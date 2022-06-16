@@ -1,8 +1,8 @@
 const router = require('express').Router();
-const { create, find, findById, remove, update } = require('../controller/article');
+const { create, findAll, findById, remove, update } = require('../controller/article');
 
 router.get('/:id', findById);
-router.get('/', find);
+router.get('/', findAll);
 router.post('/', create);
 router.update('/:id', update);
 router.delete('/:id', remove);

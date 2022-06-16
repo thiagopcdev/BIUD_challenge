@@ -1,6 +1,10 @@
 const express = require('express');
+const { articleRouter, categoryRouter } = require('../router');
 
 const app = express();
+
 app.use(express.json());
+app.use('/articles', articleRouter);
+app.use('/categories', categoryRouter);
 
 module.exports = app;

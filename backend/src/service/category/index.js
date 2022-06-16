@@ -1,13 +1,13 @@
-const create = require('./create');
-const find = require('./find');
-const findById = require('./findById');
-const remove = require('./remove');
-const update = require('./update');
+const createCategory = require('./create');
+const findAllCategories = require('./find');
+const findCategoryById = require('./findById');
+const removeCategory = require('./remove');
+const updateCategory = require('./update');
 
 module.exports = {
-  create,
-  find,
-  findById,
-  remove,
-  update,
+  createCategory,
+  findAllCategories,
+  findCategoryById,
+  removeCategory,
+  updateCategory,
 };
