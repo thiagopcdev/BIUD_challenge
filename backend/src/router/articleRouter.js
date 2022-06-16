@@ -4,7 +4,7 @@ const { create, findAll, findById, remove, update } = require('../controller/art
 router.get('/:id', findById);
 router.get('/', findAll);
 router.post('/', create);
-router.update('/:id', update);
+router.put('/:id', update);
 router.delete('/:id', remove);
 
 module.exports = router;

@@ -1,5 +1,5 @@
 const createArticle = require('./create');
-const findAllArticles = require('./find');
+const findAllArticles = require('./findAll');
 const findArticleById = require('./findById');
 const removeArticle = require('./remove');
 const updateArticle = require('./update');
