@@ -1,13 +1,12 @@
 const { StatusCodes } = require('http-status-codes');
 const { findAllArticles } = require('../../service');
 
-const findAll = async (_req, res) => {
+const findAll = async (_req, res, next) => {
   try {
     const articleList = await findAllArticles();
     return res.status(StatusCodes.OK).json(articleList);
   } catch (e) {
-    console.log(e.message);
-    return res.status(StatusCodes.INTERNAL_SERVER_ERROR).end();
+    next(e);
   }
 };
 
