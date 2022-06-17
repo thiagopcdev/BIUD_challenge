@@ -18,6 +18,8 @@
         "react"
     ],
     "rules": {
-        "react/jsx-filename-extension": "off"
+        "react/jsx-filename-extension": "off",
+        "import/no-unresolved": "off",
+        "import/no-absolute-path": "off"
     }
 }

@@ -1,0 +1,40 @@
+.main-container {
+  height: 78vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.btn-category {
+  height: 200px;
+  width: 300px;
+  background: linear-gradient(90deg, rgb(235, 18, 83), rgb(224, 20, 105));
+  color: white;
+  font-size: 22px;
+  border-radius: 20px;
+  font-weight: 500;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-category:hover {
+  font-weight: 900;
+  width: 330px;
+  cursor: pointer;
+}
+
+.btn-articles {
+  height: 200px;
+  width: 300px;
+  background: linear-gradient(90deg, rgb(235, 18, 83), rgb(224, 20, 105));
+  color: white;
+  font-size: 22px;
+  border-radius: 20px;
+  font-weight: 500;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-articles:hover {
+  font-weight: 900;
+  width: 330px;
+  cursor: pointer;
+}

@@ -1,20 +1,24 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { string, func, bool, objectOf } from 'prop-types';
+import {
+  string, func, bool, objectOf,
+} from 'prop-types';
 
 function Button(props) {
-  const { link, testId, name, onClick, disabled, style, className } = props;
+  const {
+    link, testId, name, onClick, disabled, style, className,
+  } = props;
   if (link !== '') {
     return (
       <div>
-        <Link to={ link }>
+        <Link to={link}>
           <button
             type="button"
-            data-testid={ testId }
-            onClick={ onClick }
-            disabled={ disabled }
-            style={ style }
-            className={ className }
+            data-testid={testId}
+            onClick={onClick}
+            disabled={disabled}
+            style={style}
+            className={className}
           >
             { name }
           </button>
@@ -26,11 +30,11 @@ function Button(props) {
     <div>
       <button
         type="button"
-        data-testid={ testId }
-        onClick={ onClick }
-        disabled={ disabled }
-        style={ style }
-        className={ className }
+        data-testid={testId}
+        onClick={onClick}
+        disabled={disabled}
+        style={style}
+        className={className}
       >
         { name }
       </button>

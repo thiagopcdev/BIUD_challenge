@@ -1,14 +1,11 @@
-import { Header, Footer } from './components';
+import React from 'react';
+import Routes from './routers';
+import './App.css';
 
 function App() {
   return (
-    <div>
-      <Header />
-      <h1>Hello world</h1>
-      <Footer />
-    </div>
-  )
-
+    <Routes />
+  );
 }
 
-export default App
+export default App;
