@@ -1,12 +1,12 @@
 .header-container {
-  display: flex;
-  justify-content: flex-start;
   align-items: center;
-  background-color: rgb(240, 240, 240);
-  color: rgb(77, 75, 75);
+  background-color: rgb(240 240 240);
+  color: rgb(77 75 75);
+  display: flex;
   font-size: 14px;
+  justify-content: flex-start;
 }
 
-.header-container img{
+.header-container img {
   margin-left: 50px;
 }
