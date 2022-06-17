@@ -1,6 +1,9 @@
 import React from 'react';
-import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
-import { Categories, 
+import {
+  BrowserRouter, Route, Routes, Navigate,
+} from 'react-router-dom';
+import {
+  Categories,
   RegisterCategory,
   ChangeCategory,
   Articles,
@@ -8,23 +11,23 @@ import { Categories,
   ChangeArticle,
   Article,
   Main,
-  NotFound
+  NotFound,
 } from '../pages';
 
 export default function MyRoutes() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route exact path="/" element={ <Navigate to="/main" /> } />
-        <Route exact path="/main" element={ <Main /> } />
-        <Route exact path="/categories/modify/:id" element={ <ChangeCategory /> } />
-        <Route exact path="/categories/new" element={ <RegisterCategory /> } />
-        <Route exact path="/categories" element={ <Categories /> } />
-        <Route exact path="/articles/modify/:id" element={ <ChangeArticle /> } />
-        <Route exact path="/articles/new" element={ <RegisterArticle /> } />
-        <Route exact path="/articles/:id" element={ <Article /> } />
-        <Route exact path="/articles" element={ <Articles /> } />
-        <Route path="*" element={ <NotFound /> } />
+        <Route exact path="/" element={<Navigate to="/main" />} />
+        <Route exact path="/main" element={<Main />} />
+        <Route exact path="/categories/modify/:id" element={<ChangeCategory />} />
+        <Route exact path="/categories/new" element={<RegisterCategory />} />
+        <Route exact path="/categories" element={<Categories />} />
+        <Route exact path="/articles/modify/:id" element={<ChangeArticle />} />
+        <Route exact path="/articles/new" element={<RegisterArticle />} />
+        <Route exact path="/articles/:id" element={<Article />} />
+        <Route exact path="/articles" element={<Articles />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );
