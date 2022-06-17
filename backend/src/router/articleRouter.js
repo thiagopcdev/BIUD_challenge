@@ -1,5 +1,7 @@
 const router = require('express').Router();
-const { create, findAll, findById, remove, update } = require('../controller/article');
+const {
+  create, findAll, findById, remove, update,
+} = require('../controller/article');
 const articleIsValid = require('../middleware/articleIsValid');
 
 router.get('/:id', findById);

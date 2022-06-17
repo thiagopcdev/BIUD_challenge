@@ -6,7 +6,10 @@ const update = async (req, res, next) => {
   const { description } = req.body;
   try {
     const updated = await updateCategory(id, description);
-    if (updated.message) return res.status(StatusCodes.NOT_FOUND).json({message: updated.message});
+    if (updated.message) {
+      return res.status(StatusCodes.NOT_FOUND).json({ message: updated.message });
+    }
+
     return res.status(StatusCodes.OK).json(updated);
   } catch (e) {
     next(e);

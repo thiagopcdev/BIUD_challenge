@@ -1,21 +1,26 @@
 const Article = (sequelize, DataTypes) => {
-  const Article = sequelize.define("Article", {
-    title: DataTypes.STRING,
-    description: DataTypes.STRING,
-    category_id: DataTypes.INTEGER
-  },
-  {
-    timestamps: false,
-    tableName: 'Articles',
-    underscored: true,
-  });
+  const Articlee = sequelize.define(
+    'Article',
+    {
+      title: DataTypes.STRING,
+      description: DataTypes.STRING,
+      category_id: DataTypes.INTEGER,
+    },
+    {
+      timestamps: false,
+      tableName: 'Articles',
+      underscored: true,
+    },
+  );
 
-  Article.associate = (models) => {
-    Article.belongsTo(models.Category,
-      { foreignKey: 'categoryId', as: 'categories' });
+  Articlee.associate = (models) => {
+    Articlee.belongsTo(
+      models.Category,
+      { foreignKey: 'categoryId', as: 'categories' },
+    );
   };
 
-  return Article;
+  return Articlee;
 };
 
 module.exports = Article;

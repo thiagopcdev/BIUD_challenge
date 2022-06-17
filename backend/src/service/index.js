@@ -3,14 +3,16 @@ const {
   findAllArticles,
   findArticleById,
   removeArticle,
-  updateArticle} = require('./article');
-  
+  updateArticle,
+} = require('./article');
+
 const {
   createCategory,
   findAllCategories,
   findCategoryById,
   removeCategory,
-  updateCategory } = require('./category');
+  updateCategory,
+} = require('./category');
 
 module.exports = {
   createArticle,
@@ -22,5 +24,5 @@ module.exports = {
   findAllCategories,
   findCategoryById,
   removeCategory,
-  updateCategory
+  updateCategory,
 };
