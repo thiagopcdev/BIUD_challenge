@@ -15,18 +15,18 @@ function Input(props) {
     className,
   } = props;
   return (
-    <label htmlFor={ name }>
+    <label htmlFor={name}>
       { label }
       <input
-        type={ type }
-        name={ name }
-        value={ value }
-        onChange={ (event) => onChange(event.target.value) }
-        id={ id }
-        data-testid={ testId }
-        placeholder={ holder }
-        checked={ checked }
-        className={ className }
+        type={type}
+        name={name}
+        value={value}
+        onChange={(event) => onChange(event.target.value)}
+        id={id}
+        data-testid={testId}
+        placeholder={holder}
+        checked={checked}
+        className={className}
       />
     </label>
   );

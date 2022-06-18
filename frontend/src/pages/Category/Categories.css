@@ -1,0 +1,7 @@
+.categories-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 78vh;
+  justify-content: center;
+}

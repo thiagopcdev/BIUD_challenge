@@ -7,6 +7,10 @@
   justify-content: flex-start;
 }
 
-.header-container img {
+.header-container button {
+  cursor: pointer;
+}
+
+.header-container button img {
   margin-left: 50px;
 }
