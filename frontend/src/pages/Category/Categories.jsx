@@ -35,7 +35,7 @@ function Categories() {
       <Header />
       <div className="categories-container">
         <SubHeader name="Categorias" />
-        <ListItems name="categories" list={categoriesList} onDeleteItem={handleDelete} />
+        <ListItems list={categoriesList} onDeleteItem={handleDelete} />
       </div>
       <Footer />
     </>

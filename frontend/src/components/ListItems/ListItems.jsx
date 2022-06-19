@@ -5,14 +5,14 @@ import DeleteImg from '/delete.png';
 import { Button } from '..';
 import './ListItems.css';
 
-function ListItems({ name, list, onDeleteItem }) {
+function ListItems({ list, onDeleteItem }) {
   return (
     <ul className="list-container">
       {list.map((item, index) => (
         <li key={item}>
           {item}
           <div className="list-options">
-            <Button title="Edit" link={`/${name}/modify/${index + 1}`}>
+            <Button title="Edit" link={`./modify/${index + 1}`}>
               <img src={EditImg} alt="Edit option" width="40px" />
             </Button>
             <Button title="Delete" onClick={() => onDeleteItem(index + 1)}>
@@ -27,7 +27,6 @@ function ListItems({ name, list, onDeleteItem }) {
 
 ListItems.propTypes = {
   list: PropTypes.arrayOf(PropTypes.string).isRequired,
-  name: PropTypes.string.isRequired,
   onDeleteItem: PropTypes.func.isRequired,
 };
 
