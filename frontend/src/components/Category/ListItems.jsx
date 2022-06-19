@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import EditImg from '/edit.png';
 import DeleteImg from '/delete.png';
-import './CategoryList.css';
+import './ListItems.css';
 
-function CategoryList({ list }) {
+function ListItems({ list }) {
   return (
     <ul className="list-container">
       {list.map((item) => (
@@ -24,8 +24,8 @@ function CategoryList({ list }) {
   );
 }
 
-CategoryList.propTypes = {
+ListItems.propTypes = {
   list: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
-export default CategoryList;
+export default ListItems;

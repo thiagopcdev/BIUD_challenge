@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  SubHeader, CategoryList, Header, Footer,
+  SubHeader, ListItems, Header, Footer,
 } from '../../components';
 import './Categories.css';
 
@@ -11,7 +11,7 @@ function Categories() {
       <Header />
       <div className="categories-container">
         <SubHeader name="Categorias" />
-        <CategoryList list={CategoriesList} />
+        <ListItems list={CategoriesList} />
       </div>
       <Footer />
     </>

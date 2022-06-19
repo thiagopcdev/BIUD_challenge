@@ -3,5 +3,5 @@ export { default as Input } from './Basics/Input';
 export { default as Select } from './Basics/Select';
 export { default as Header } from './Header/Header';
 export { default as Footer } from './Footer/Footer';
-export { default as CategoryList } from './Category/CategoryList';
+export { default as ListItems } from './Category/ListItems';
 export { default as SubHeader } from './Header/SubHeader';
