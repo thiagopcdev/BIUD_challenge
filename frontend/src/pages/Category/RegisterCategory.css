@@ -1,0 +1,67 @@
+.register-category-container {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  height: 78vh;
+  justify-content: flex-start;
+  margin-left: 75px;
+  margin-top: 50px;
+}
+
+.title-page {
+  font-family: Franklin Gothic Medium , Arial Narrow , Arial , sans-serif;
+  font-size: 28px;
+}
+
+.description-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.description-input input {
+  border: 1px solid rgb(173, 173, 173);
+  border-radius: 5px;
+  font-size: 20px;
+  height: 40px;
+  margin-bottom: 20px;
+  padding: 1px;
+  width: 500px;
+}
+
+.description-input input:focus {
+  border: 1px solid rgb(224 20 105);
+  box-shadow: 0 0 1px rgb(235 18 83);
+  outline: none;
+}
+
+.description-input label {
+  font-size: 13px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+.saveback-section {
+  display: flex;
+}
+
+.saveback-section button {
+  border: 1px solid rgb(160, 159, 159);
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  margin-right: 15px;
+  opacity: 0.8;
+  padding: 5px 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.saveback-section button:hover {
+  opacity: 1;
+}
+
+.btn-save {
+  background: linear-gradient(90deg, rgb(235 18 83), rgb(224 20 105));
+  border: 1px solid rgb(60, 27, 207);
+  color: white;
+}
