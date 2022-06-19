@@ -6,7 +6,7 @@ import {
 
 function Button(props) {
   const {
-    link, testId, name, onClick, disabled, style, className,
+    link, testId, name, children, title, onClick, disabled, style, className,
   } = props;
   if (link !== '') {
     return (
@@ -19,8 +19,9 @@ function Button(props) {
             disabled={disabled}
             style={style}
             className={className}
+            title={title}
           >
-            { name }
+            { name || children }
           </button>
         </Link>
       </div>
@@ -35,8 +36,9 @@ function Button(props) {
         disabled={disabled}
         style={style}
         className={className}
+        title={title}
       >
-        { name }
+        { name || children }
       </button>
     </div>
   );
@@ -45,11 +47,13 @@ function Button(props) {
 Button.propTypes = {
   link: string,
   testId: string,
-  name: string.isRequired,
+  name: string,
+  children: string,
   onClick: func,
   disabled: bool,
   style: objectOf(string),
   className: string,
+  title: string,
 };
 
 Button.defaultProps = {
@@ -59,6 +63,9 @@ Button.defaultProps = {
   style: {},
   disabled: false,
   className: '',
+  title: '',
+  name: '',
+  children: '',
 };
 
 export default Button;

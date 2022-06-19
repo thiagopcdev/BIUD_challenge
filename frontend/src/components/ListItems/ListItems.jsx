@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import EditImg from '/edit.png';
 import DeleteImg from '/delete.png';
+import { Button } from '..';
 import './ListItems.css';
 
 function ListItems({ list }) {
@@ -11,12 +12,12 @@ function ListItems({ list }) {
         <li key={item}>
           {item}
           <div className="list-options">
-            <button type="button" title="Edit">
+            <Button title="Edit" link="/">
               <img src={EditImg} alt="Edit option" width="40px" />
-            </button>
-            <button type="button" title="Delete">
+            </Button>
+            <Button title="Delete">
               <img src={DeleteImg} alt="Delete option" width="40px" />
-            </button>
+            </Button>
           </div>
         </li>
       ))}
