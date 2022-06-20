@@ -24,8 +24,8 @@ export default function MyRoutes() {
         <Route exact path="/categories/new" element={<RegisterCategory />} />
         <Route exact path="/categories" element={<Categories />} />
         <Route exact path="/articles/modify/:id" element={<ChangeArticle />} />
+        <Route exact path="/articles/read/:id" element={<Article />} />
         <Route exact path="/articles/new" element={<RegisterArticle />} />
-        <Route exact path="/articles/:id" element={<Article />} />
         <Route exact path="/articles" element={<Articles />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

@@ -15,24 +15,26 @@ function Select(props) {
   } = props;
 
   return (
-    <label htmlFor={ name }>
-      { label }
+    <>
+      <label htmlFor={name}>
+        { label }
+      </label>
       <select
-        name={ name }
-        id={ id }
+        name={name}
+        id={id}
         required
-        onChange={ onChange }
-        value={ value }
-        data-testid={ testId }
+        onChange={(event) => onChange(event.target.value)}
+        value={value}
+        data-testid={testId}
       >
-        <option value={ defaultValue }>{ defaultOption }</option>
+        <option value={defaultValue}>{ defaultOption }</option>
         {
-          options.map((option, index) => (
-            <option key={ index }>{ option }</option>
+          options.map((option) => (
+            <option key={option}>{ option }</option>
           ))
         }
       </select>
-    </label>
+    </>
   );
 }
 
