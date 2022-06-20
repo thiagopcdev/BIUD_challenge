@@ -20,11 +20,11 @@ export default function MyRoutes() {
       <Routes>
         <Route exact path="/" element={<Navigate to="/main" />} />
         <Route exact path="/main" element={<Main />} />
-        <Route exact path="/categories/modify/:id" element={<ChangeCategory />} />
+        <Route exact path="/categories/:id/modify" element={<ChangeCategory />} />
         <Route exact path="/categories/new" element={<RegisterCategory />} />
         <Route exact path="/categories" element={<Categories />} />
-        <Route exact path="/articles/modify/:id" element={<ChangeArticle />} />
-        <Route exact path="/articles/read/:id" element={<Article />} />
+        <Route exact path="/articles/:id/modify" element={<ChangeArticle />} />
+        <Route exact path="/articles/:id" element={<Article />} />
         <Route exact path="/articles/new" element={<RegisterArticle />} />
         <Route exact path="/articles" element={<Articles />} />
         <Route path="*" element={<NotFound />} />

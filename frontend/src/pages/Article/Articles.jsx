@@ -34,7 +34,7 @@ function Articles() {
       <Header />
       <div className="articles-container">
         <SubHeader name="Artigos" />
-        <ListItems list={articleList} onDeleteItem={handleDelete} />
+        <ListItems type="article" list={articleList} onDeleteItem={handleDelete} />
       </div>
       <Footer />
     </>

@@ -8,8 +8,22 @@
   border: 1px solid rgb(194, 193, 193);
   display: flex;
   justify-content: space-between;
-  padding: 15px;
+  padding: 5px 12px;
+  text-decoration: none;
   width: 90vw;
+}
+
+.list-container li a {
+  color: black;
+  opacity: 0.8;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.list-container li a:hover {
+  color: rgb(224 20 105);
+  cursor: pointer;
+  opacity: 1;
 }
 
 .list-options {

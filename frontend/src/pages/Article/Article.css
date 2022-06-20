@@ -1,0 +1,17 @@
+.article-container {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  justify-content: flex-start;
+  margin-left: 75px;
+  margin-top: 50px;
+}
+
+.description-field p {
+  height: 40vh;
+  margin-bottom: 5vh;
+  margin-top: 5vh;
+  overflow: auto;
+  width: 70vw;
+}
