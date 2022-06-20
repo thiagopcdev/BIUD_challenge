@@ -1,33 +1,53 @@
-import React, { useState } from 'react';
-import swal from 'sweetalert';
+import React, { useState, useEffect } from 'react';
 import {
   SubHeader, ListItems, Header, Footer,
 } from '../../components';
 import './Categories.css';
+import api from '../../services/Api';
+import loadingGif from '/biud.gif';
+import {
+  alertError, alertOk, alertSucess, alertSure,
+} from '../../helpers/SweetAlert';
 
 function Categories() {
-  const list = ['Categoria 1', 'Categoria 2', 'Categoria 3'];
-  const [categoriesList, setCategoriesList] = useState(list);
+  const [categoriesList, setCategoriesList] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const getCategories = async () => {
+      setLoading(true);
+      await api.get('/categories')
+        .then(({ data }) => setCategoriesList(data))
+        .then(setLoading(false))
+        .catch((err) => {
+          console.error(`ops! something is wrong: ${err}`);
+        });
+    };
+    getCategories();
+  }, []);
 
   const handleDelete = (id) => {
-    swal({
-      title: 'Tem certeza?',
-      text: `Uma vez excluída, você não poderá recuperar a categoria ${categoriesList[id - 1]} !`,
-      icon: 'warning',
-      buttons: true,
-      dangerMode: true,
-    })
-      .then((willDelete) => {
+    const objCategory = categoriesList.find((category) => category.id === id);
+    alertSure(
+      'categoria',
+      objCategory.description,
+      'excluída',
+      async (willDelete) => {
         if (willDelete) {
-          swal('Prontinho! A categoria foi excluída com sucesso!', {
-            icon: 'success',
-          });
-          const filteredArray = categoriesList.filter((_item, index) => index + 1 !== id);
-          setCategoriesList(filteredArray);
+          try {
+            await api.delete(`/categories/${id}`);
+            alertSucess('categoria', 'excluída');
+            const filteredArray = categoriesList.filter((item) => item.id !== id);
+            setCategoriesList(filteredArray);
+          } catch (err) {
+            console.error(`ops, something is wrong with the delete API ${err}`);
+            alertError('categoria', objCategory.description, 'excluir');
+          }
         } else {
-          swal('Tudo bem, a categoria está segura!');
+          alertOk('categoria');
         }
-      });
+      },
+    );
   };
 
   return (
@@ -35,7 +55,11 @@ function Categories() {
       <Header />
       <div className="categories-container">
         <SubHeader name="Categorias" />
-        <ListItems list={categoriesList} onDeleteItem={handleDelete} />
+        {loading
+          ? <img src={loadingGif} alt="Loading..." width="150px" />
+          : (
+            <ListItems list={categoriesList} onDeleteItem={handleDelete} />
+          )}
       </div>
       <Footer />
     </>

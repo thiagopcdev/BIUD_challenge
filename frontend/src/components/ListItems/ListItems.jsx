@@ -1,5 +1,7 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import {
+  arrayOf, objectOf, string, func,
+} from 'prop-types';
 import EditImg from '/edit.png';
 import DeleteImg from '/delete.png';
 import { Link } from 'react-router-dom';
@@ -9,16 +11,16 @@ import './ListItems.css';
 function ListItems({ list, onDeleteItem, type }) {
   return (
     <ul className="list-container">
-      {list.map((item, index) => (
-        <li key={item}>
+      {list.map(({ id, description }) => (
+        <li key={description}>
           {type === 'article'
-            ? (<Link to={`./${index + 1}`}>{item}</Link>)
-            : item}
+            ? (<Link to={`./${id}`}>{description}</Link>)
+            : description}
           <div className="list-options">
-            <Button title="Edit" link={`./${index + 1}/modify`}>
+            <Button title="Edit" link={`./${id}/modify`}>
               <img src={EditImg} alt="Edit option" width="40px" />
             </Button>
-            <Button title="Delete" onClick={() => onDeleteItem(index + 1)}>
+            <Button title="Delete" onClick={() => onDeleteItem(id)}>
               <img src={DeleteImg} alt="Delete option" width="40px" />
             </Button>
           </div>
@@ -29,9 +31,9 @@ function ListItems({ list, onDeleteItem, type }) {
 }
 
 ListItems.propTypes = {
-  list: PropTypes.arrayOf(PropTypes.string).isRequired,
-  onDeleteItem: PropTypes.func.isRequired,
-  type: PropTypes.string,
+  list: arrayOf(objectOf(string)).isRequired,
+  onDeleteItem: func.isRequired,
+  type: string,
 };
 
 ListItems.defaultProps = {
