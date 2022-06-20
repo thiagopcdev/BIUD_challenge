@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import {
   Button, Footer, Header, Input,
 } from '../../components';
-import './RegisterCategory.css';
+import './RegisterChangeCategory.css';
 
 function RegisterCategory() {
   const [description, setDescription] = useState('');
@@ -10,7 +10,7 @@ function RegisterCategory() {
   return (
     <>
       <Header />
-      <div className="register-category-container">
+      <div className="register-change-category-container">
         <p className="title-page">Cadastrar nova categoria</p>
         <main className="description-input">
           <Input

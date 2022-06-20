@@ -1,8 +1,8 @@
-.register-category-container {
+.register-change-category-container {
   align-items: flex-start;
   display: flex;
   flex-direction: column;
-  height: 78vh;
+  height: 70vh;
   justify-content: flex-start;
   margin-left: 75px;
   margin-top: 50px;
@@ -24,8 +24,9 @@
   font-size: 20px;
   height: 40px;
   margin-bottom: 20px;
-  padding: 1px;
-  width: 500px;
+  max-width: 500px;
+  padding: 10px;
+  width: 70vw;
 }
 
 .description-input input:focus {
