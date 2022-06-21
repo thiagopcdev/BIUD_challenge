@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "db:reset": "./scripts/reset-db-dev.sh"
+    "pm2": "./node_modules/.bin/pm2",
+    "prestart": "./scripts/prestart.sh",
+    "start": "./scripts/prepare-open.sh",
+    "stop": "(pm2 stop all && pm2 delete all) | grep 'PM2'",
+    "db:reset": "./scripts/reset-db.sh"
   },
   "repository": {
     "type": "git",
@@ -16,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/thiagopcdev/BIUD_challenge/issues"
   },
-  "homepage": "https://github.com/thiagopcdev/BIUD_challenge#readme"
+  "homepage": "https://github.com/thiagopcdev/BIUD_challenge#readme",
+  "dependencies": {
+    "pm2": "^5.2.0"
+  }
 }
