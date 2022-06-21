@@ -51,7 +51,7 @@ function ChangeCategory() {
             type="text"
             value={loading ? '...' : description}
             onChange={setDescription}
-            minLength="5"
+            minLength="3"
           />
           <section className="saveback-section">
             <Button

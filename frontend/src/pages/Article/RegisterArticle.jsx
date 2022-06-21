@@ -65,7 +65,7 @@ function RegisterArticle() {
                   onChange={setTitle}
                   className="title-input"
                   required="true"
-                  minLength="5"
+                  minLength="3"
                 />
                 <Textarea
                   label="Descrição"

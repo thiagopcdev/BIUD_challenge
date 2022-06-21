@@ -35,7 +35,7 @@ function RegisterCategory() {
             type="text"
             value={description}
             onChange={setDescription}
-            minLength="5"
+            minLength="3"
           />
           <section className="saveback-section">
             <Button

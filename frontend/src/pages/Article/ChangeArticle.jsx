@@ -76,6 +76,7 @@ function ChangeArticle() {
                   onChange={setTitle}
                   className="title-input"
                   required="true"
+                  minLength="3"
                 />
                 <Textarea
                   label="Descrição"
