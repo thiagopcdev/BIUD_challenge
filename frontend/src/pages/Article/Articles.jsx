@@ -50,25 +50,6 @@ function Articles() {
         }
       },
     );
-
-    // swal({
-    //   title: 'Tem certeza?',
-    //   text: `Uma vez excluído, você não poderá recuperar o artigo ${articleList[id - 1]}!`,
-    //   icon: 'warning',
-    //   buttons: true,
-    //   dangerMode: true,
-    // })
-    //   .then((willDelete) => {
-    //     if (willDelete) {
-    //       swal('Prontinho! O Artigo foi excluído com sucesso!', {
-    //         icon: 'success',
-    //       });
-    //       const filteredArray = articleList.filter((_item, index) => index + 1 !== id);
-    //       setArticleList(filteredArray);
-    //     } else {
-    //       swal('Tudo bem, o artigo está seguro!');
-    //     }
-    //   });
   };
   return (
     <>

@@ -26,7 +26,8 @@ function ChangeCategory() {
     getCategory();
   }, []);
 
-  const modifyCategory = async () => {
+  const modifyCategory = async (event) => {
+    event.preventDefault();
     try {
       await api.put(`/categories/${id}`, { description });
       alertSucess('categoria', 'alterada');
@@ -38,7 +39,7 @@ function ChangeCategory() {
   };
 
   return (
-    <>
+    <form onSubmit={(event) => modifyCategory(event)}>
       <Header />
       <div className="register-change-category-container">
         <p className="title-page">Editar categoria</p>
@@ -50,6 +51,7 @@ function ChangeCategory() {
             type="text"
             value={loading ? '...' : description}
             onChange={setDescription}
+            minLength="5"
           />
           <section className="saveback-section">
             <Button
@@ -58,17 +60,18 @@ function ChangeCategory() {
               link="/categories"
               title="Voltar"
             />
-            <Button
+            <Input
+              type="submit"
               name="Salvar"
               className="btn-save"
               title="Salvar"
-              onClick={() => modifyCategory()}
+              value="Salvar"
             />
           </section>
         </main>
       </div>
       <Footer />
-    </>
+    </form>
   );
 }
 

@@ -1,11 +1,16 @@
 .footer-container {
   align-items: center;
   background-color: rgb(240 240 240);
+
+  /* bottom: 0; */
   color: rgb(77 75 75);
   display: flex;
   font-size: 14px;
   justify-content: center;
   padding: 30px;
+
+  /* position: fixed;
+  width: 100%; */
 }
 
 .footer-container p {

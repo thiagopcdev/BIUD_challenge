@@ -4,4 +4,6 @@
   flex-direction: column;
   height: 77vh;
   justify-content: center;
+  margin-top: 5px;
+  overflow: auto;
 }

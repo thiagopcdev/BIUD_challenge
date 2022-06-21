@@ -7,7 +7,7 @@ import './SubHeader.css';
 function SubHeader({ name }) {
   return (
     <div className="subheader-container">
-      <h2>{name}</h2>
+      <p className="rc-title-page">{name}</p>
       <Button title="Add" link="./new">
         <img src={AddImg} alt="Add new" width="50px" />
       </Button>

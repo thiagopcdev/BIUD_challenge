@@ -14,6 +14,7 @@ function Input(props) {
     checked,
     className,
     required,
+    minLength,
   } = props;
   return (
     <>
@@ -31,6 +32,7 @@ function Input(props) {
         checked={checked}
         className={className}
         required={required}
+        minLength={minLength}
       />
     </>
   );
@@ -51,6 +53,7 @@ Input.propTypes = {
   checked: PropTypes.bool,
   className: PropTypes.string,
   required: PropTypes.string,
+  minLength: PropTypes.string,
 };
 
 Input.defaultProps = {
@@ -64,6 +67,7 @@ Input.defaultProps = {
   checked: false,
   className: '',
   required: 'false',
+  minLength: '',
 };
 
 export default Input;

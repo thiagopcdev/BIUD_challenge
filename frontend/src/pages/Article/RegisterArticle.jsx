@@ -20,7 +20,10 @@ function RegisterArticle() {
     const getCategories = async () => {
       setLoading(true);
       await api.get('/categories')
-        .then(({ data }) => setCategoriesList(data))
+        .then(({ data }) => {
+          setCategoriesList(data);
+          setCategoryId(data[0].id);
+        })
         .then(setTimeout(() => {
           setLoading(false);
         }, 250))
@@ -61,6 +64,8 @@ function RegisterArticle() {
                   value={title}
                   onChange={setTitle}
                   className="title-input"
+                  required="true"
+                  minLength="5"
                 />
                 <Textarea
                   label="Descrição"
@@ -76,8 +81,9 @@ function RegisterArticle() {
                   id="category"
                   value={categoryId}
                   onChange={setCategoryId}
-                  defaultOption={categoriesList[0].description}
                   defaultValue={categoriesList[0].id}
+                  defaultOption={categoriesList[0].description}
+                  required="true"
                   options={categoriesList.slice(1, categoriesList.length)}
 
                 />

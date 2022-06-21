@@ -1,6 +1,8 @@
 .list-container {
-  border: 1px solid rgb(194, 193, 193);
+  height: 65vh;
   list-style: none;
+  overflow: auto;
+  width: 90vw;
 }
 
 .list-container li {
@@ -10,7 +12,6 @@
   justify-content: space-between;
   padding: 5px 12px;
   text-decoration: none;
-  width: 90vw;
 }
 
 .list-container li a {

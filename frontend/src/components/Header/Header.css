@@ -5,6 +5,11 @@
   display: flex;
   font-size: 14px;
   justify-content: flex-start;
+
+  /* position: fixed; */
+
+  /* top: 0;
+  width: 100%; */
 }
 
 .header-container button {
