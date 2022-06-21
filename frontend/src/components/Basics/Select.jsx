@@ -12,6 +12,7 @@ function Select(props) {
     defaultValue,
     options,
     testId,
+    required,
   } = props;
 
   return (
@@ -22,15 +23,15 @@ function Select(props) {
       <select
         name={name}
         id={id}
-        required
+        required={required}
         onChange={(event) => onChange(event.target.value)}
         value={value}
         data-testid={testId}
       >
         <option value={defaultValue}>{ defaultOption }</option>
         {
-          options.map((option) => (
-            <option key={option}>{ option }</option>
+          options.map(({ id: objId, description }) => (
+            <option value={objId} key={objId}>{ description }</option>
           ))
         }
       </select>
@@ -44,12 +45,11 @@ Select.propTypes = {
   id: PropTypes.string.isRequired,
   onChange: PropTypes.func,
   value: PropTypes.string,
-  options: PropTypes.arrayOf(
-    PropTypes.string,
-  ).isRequired,
+  options: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.string)).isRequired,
   defaultValue: PropTypes.string.isRequired,
   defaultOption: PropTypes.string.isRequired,
   testId: PropTypes.string,
+  required: PropTypes.string,
 };
 
 Select.defaultProps = {
@@ -57,6 +57,7 @@ Select.defaultProps = {
   value: '',
   label: '',
   testId: '',
+  required: 'false',
 };
 
 export default Select;

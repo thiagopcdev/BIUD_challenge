@@ -13,6 +13,7 @@ function Input(props) {
     holder,
     checked,
     className,
+    required,
   } = props;
   return (
     <>
@@ -29,6 +30,7 @@ function Input(props) {
         placeholder={holder}
         checked={checked}
         className={className}
+        required={required}
       />
     </>
   );
@@ -48,6 +50,7 @@ Input.propTypes = {
   holder: PropTypes.string,
   checked: PropTypes.bool,
   className: PropTypes.string,
+  required: PropTypes.string,
 };
 
 Input.defaultProps = {
@@ -60,6 +63,7 @@ Input.defaultProps = {
   holder: '',
   checked: false,
   className: '',
+  required: 'false',
 };
 
 export default Input;

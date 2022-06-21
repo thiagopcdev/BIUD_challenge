@@ -11,10 +11,10 @@ import './ListItems.css';
 function ListItems({ list, onDeleteItem, type }) {
   return (
     <ul className="list-container">
-      {list.map(({ id, description }) => (
+      {list.map(({ id, description, title }) => (
         <li key={description}>
           {type === 'article'
-            ? (<Link to={`./${id}`}>{description}</Link>)
+            ? (<Link to={`./${id}`}>{title}</Link>)
             : description}
           <div className="list-options">
             <Button title="Edit" link={`./${id}/modify`}>

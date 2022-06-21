@@ -18,7 +18,12 @@
   flex-direction: column;
 }
 
-.inputs-container input, select, textarea {
+.inputs-container img {
+  margin-left: 50px;
+  margin-top: 100px;
+}
+
+.inputs-container input[ type = 'text' ], select, textarea {
   background-color: white;
   border: 1px solid rgb(173, 173, 173);
   border-radius: 5px;
@@ -37,7 +42,7 @@
   height: 110px;
 }
 
-.inputs-container input:focus, select:focus, textarea:focus {
+.inputs-container input[ type = 'text' ]:focus, select:focus, textarea:focus {
   border: 1px solid rgb(224 20 105);
   box-shadow: 0 0 1px rgb(235 18 83);
   outline: none;
@@ -59,7 +64,7 @@
   display: flex;
 }
 
-.saveback-section button {
+.saveback-section button, input[ type = 'submit' ] {
   border: 1px solid rgb(160, 159, 159);
   border-radius: 5px;
   cursor: pointer;
@@ -71,7 +76,7 @@
   transition: all 0.3s ease-in-out;
 }
 
-.saveback-section button:hover {
+.saveback-section button:hover, input[ type = 'submit' ]:hover {
   opacity: 1;
 }
 

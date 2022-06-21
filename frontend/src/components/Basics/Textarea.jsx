@@ -11,6 +11,7 @@ function Textarea(props) {
     testId,
     holder,
     className,
+    required,
   } = props;
   return (
     <>
@@ -25,6 +26,7 @@ function Textarea(props) {
         data-testid={testId}
         placeholder={holder}
         className={className}
+        required={required}
       />
     </>
   );
@@ -42,6 +44,7 @@ Textarea.propTypes = {
   testId: PropTypes.string,
   holder: PropTypes.string,
   className: PropTypes.string,
+  required: PropTypes.string,
 };
 
 Textarea.defaultProps = {
@@ -53,6 +56,7 @@ Textarea.defaultProps = {
   testId: '',
   holder: '',
   className: '',
+  required: 'false',
 };
 
 export default Textarea;

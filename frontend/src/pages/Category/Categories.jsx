@@ -18,7 +18,9 @@ function Categories() {
       setLoading(true);
       await api.get('/categories')
         .then(({ data }) => setCategoriesList(data))
-        .then(setLoading(false))
+        .then(setTimeout(() => {
+          setLoading(false);
+        }, 500))
         .catch((err) => {
           console.error(`ops! something is wrong: ${err}`);
         });
