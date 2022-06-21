@@ -1,22 +1,25 @@
 module.exports = {
-  up: async (queryInterface, _Sequelize) => {
-    return queryInterface.bulkInsert('Categories',
-      [
-        {
-          description: 'estudo de caso',
-        },
-        {
-          description: 'revisão bibliométrica',
-        },
-        {
-          description: 'pesquisa ação',
-        },
-      ],
-      {},
-    );
-  },
+  up: async (queryInterface) => queryInterface.bulkInsert(
+    'Categories',
+    [
+      {
+        description: 'revisão bibliográfica',
+      },
+      {
+        description: 'survey',
+      },
+      {
+        description: 'estudo de caso',
+      },
+      {
+        description: 'revisão bibliométrica',
+      },
+      {
+        description: 'pesquisa ação',
+      },
+    ],
+    {},
+  ),
 
-  down: async (queryInterface, _Sequelize) => {
-    return queryInterface.bulkDelete('Categories', null, {});
-  },
+  down: async (queryInterface) => queryInterface.bulkDelete('Categories', null, {}),
 };

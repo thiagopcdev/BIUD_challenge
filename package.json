@@ -1,0 +1,20 @@
+{
+  "name": "desafio_biud",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "db:reset": "./scripts/reset-db-dev.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thiagopcdev/BIUD_challenge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thiagopcdev/BIUD_challenge/issues"
+  },
+  "homepage": "https://github.com/thiagopcdev/BIUD_challenge#readme"
+}

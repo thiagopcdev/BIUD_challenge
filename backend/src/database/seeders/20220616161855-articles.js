@@ -1,33 +1,30 @@
 module.exports = {
-  up: async (queryInterface, _Sequelize) => {
-    return queryInterface.bulkInsert('Articles',
-      [
-        {
-          title: 'Artigo 1',
-          description: 'Este é o primeiro artigo',
-          category_id: 1,
-        },
-        {
-          title: 'Artigo 2',
-          description: 'Este é o segundo artigo',
-          category_id: 1,
-        },
-        {
-          title: 'Artigo 3',
-          description: 'Este é o terceiro artigo',
-          category_id: 2,
-        },
-        {
-          title: 'Artigo 4',
-          description: 'Este é o quarto artigo',
-          category_id: 3,
-        },
-      ],
-      {},
-    );
-  },
+  up: async (queryInterface) => queryInterface.bulkInsert(
+    'Articles',
+    [
+      {
+        title: 'Quanto tempo você consegue ficar offline?',
+        description: 'São incontáveis e inegáveis os prós que as tecnologias nos trazem. Facilitar processos é um dos principais objetivos dos novos inventos, mas como bem sabemos, há sempre os dois lados da moeda. E quando o assunto envolve as tecnologias da comunicação, mais precisamente tudo o que está ligado à internet, um dos contras que cada vez mais preocupa é o fato de que não conseguimos mais separar os momentos conectados dos desconectados. Por aí, você sabe quanto tempo você consegue ficar offline? Nos seus momentos de folga, você realmente fica longe do trabalho? Tirar férias, pegar a estrada ou então um avião, ir para um lugar paradisíaco e descansar. Dia após dia sonhamos com isso, principalmente naqueles momentos de estresse e tensão no trabalho. Ao final de um longo período de desgaste, tudo o que mais desejamos são as sonhadas férias. Mas nem todos conseguem se entregar plenamente ao momento de descanso. Quantas vezes você se pegou conferindo seus e-mails durante aquele feriadão na praia? E a ansiedade de pensar que você está fazendo falta na empresa quando você viaja nas férias?',
+        category_id: 1,
+      },
+      {
+        title: 'Coworkings no interior ou na capital: quais as diferenças e principais desafios',
+        description: 'Cada espaço de trabalho compartilhado é único. A maior parte deles segue um mesmo fluxo de tendências e as semelhanças acabam sim sendo mais frequentes dos que as diferenças. Mas, com esse mercado se consolidando cada vez mais, no Brasil e no mundo, e com as rápidas mudanças que o ramo enfrenta todos os anos, é impossível não olhar para as particularidades dos espaços. Normalmente abordamos por aqui aspectos mais macro do cenário, mas percebemos que existem algumas situações que exigem um olhar um pouco mais atento. Um espaço muito bem sucedido na capital de São Paulo pode até ser modelo e inspiração para um novo coworking em Santo André, por exemplo, mas é preciso compreender que as cenas são distintas. E é sobre isso que o nosso papo de hoje quer abordar: quais são as principais diferenças entre espaços da capital e do interior? Ainda é preciso explicar o que é coworking Quando se começa a pensar em abrir um espaço compartilhado, talvez o futuro founder nem imagine que ele terá um papel muito além do de empreendedor.',
+        category_id: 1,
+      },
+      {
+        title: 'Como começar um projeto paralelo? E quando tornar ele seu trabalho oficial?',
+        description: 'Tudo que vem fácil vai fácil. Você já deve ter escutado esse clichê, e como a maioria dos clichês, esse também costuma se confirmar. Quando o assunto é trabalho e realização profissional essa tendência é bem presente, e muitas vezes precisamos fazer várias coisas ao mesmo tempo até encontrarmos aquela que verdadeiramente nos satisfaça. Se você ainda não pode jogar tudo para o alto para ir em busca do seu sonho maior, talvez seja a hora de investir em um projeto paralelo. Como identificar um potencial projeto paralelo? A gente sempre sabe. O projeto paralelo ideal pra você é aquele que faz seu coração bater acelerado, aquele assunto que você adora falar sobre e fica empolgado só de contar o rascunho da ideia pra alguém. Pode ser aquela banda de covers que você sempre quis montar ou um aplicativo que você acha que resolveria algum grande problema do dia a dia. O importante é que a motivação seja genuína, porque é essa vontade de realizar algo que vai fazer você tirar a ideia do papel mesmo já tendo um trabalho fixo, dois cachorros pra cuidar, um filho para os planos futuros e assim por diante.',
+        category_id: 2,
+      },
+      {
+        title: 'Coworkings segmentados: essa tendência vale mesmo a pena?',
+        description: 'Seguindo o fluxo natural das tendências para o mercado dos escritórios compartilhados, os coworkings segmentados no Brasil ainda aparecem de forma tímida e menos expressiva que os espaços que recebem diversos tipos de profissionais. Mas, de qualquer forma, a tendência tem se consolidado em diversos países e tem tudo para ser uma alternativa no cenário brasileiro em meio a tantas mudanças aceleradas do mercado. Assim como as salas privativas já foram uma ideia que parecia ir contra os princípios do coworking e hoje já predominam nos principais centros urbanos, os espaços de nichos específicos ainda podem provocar questionamentos. Como escolher o nicho certo? Pesquisando e analisando diversos espaços compartilhados de nicho é muito fácil identificar um padrão: a maior parte dos empreendimentos específicos para alguma área de trabalho foram criados por um profissional desse mesmo setor. E, obviamente, isso tende a dar mais certo, uma vez que o profissional já conhece as necessidades e possibilidades do seu potencial cliente, afinal, ele mesmo pertence ao mercado. É claro que não basta ser um advogado e abrir um espaço de trabalho para advogados. É preciso ter a noção que dali pra frente essa figura também será uma administradora, bem como a líder de uma comunidade. Uma ideia que pode funcionar muito bem é um negócio com mais de um sócio, onde pelo menos um possui o conhecimento sobre o nicho escolhido e o outro tenha uma noção mais ampla de empreendedorismo. Foi basicamente assim que nasceu o LAB Fashion, primeiro coworking com foco na moda sustentável de São Paulo. Junto com um sócio fundador, Diogo Hayashi apostou na ideia, já que pelo menos um deles já tinha experiência com moda. A vontade sempre foi de criar um espaço compartilhado e que gerasse um impacto social positivo, e eles vislumbraram uma oportunidade única ao apostar nesse segmento. “A grande vantagem é que você se torna referência muito mais rapidamente e as pessoas passam a lhe procurar por você ser especializado. A desvantagem é que quando as pessoas não são do segmento acabam não frequentando o espaço, mesmo sendo um espaço multiuso”, opina Diogo.',
+        category_id: 3,
+      },
+    ],
+    {},
+  ),
 
-  down: async (queryInterface, _Sequelize) => {
-    return queryInterface.bulkDelete('Articles', null, {});
-  },
+  down: async (queryInterface) => queryInterface.bulkDelete('Articles', null, {}),
 };
