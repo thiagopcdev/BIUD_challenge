@@ -1,0 +1,37 @@
+## Desafio Técnico BIUD
+
+Este projeto foi proposto na etapa técnica do processo seletivo para a vaga de Desenvolvedor Front-End na BIUD.
+É um projeto web completo onde o principal objetivo era criar um web app onde o usuário possa cadastrar **categorias** e, posteriormente cadastrar **artigos** vinculados a essas categorias.
+O desafio também contempla o back-end como um opcional, que seria um diferencial na hora da avaliação do projeto.
+
+### Tecnologias utilizadas:
+
+#### Front-end:
+
+* ReactJS
+* ReactRouterDOM
+* Axios
+* SweetAlert
+* Eslint
+* StyleLint
+
+#### Back-end:
+
+* NodeJS
+* ExpressJS
+* Sequelize (**ORM**)
+* MySQL
+* HttpStatusCode
+* DotEnv
+* Cors
+
+### Como executar o projeto
+
+1. Clone o repositório
+  * `git clone git@github.com:thiagopcdev/BIUD_challenge.git`
+2. Digite a pasta do repositório que você acabou de clonar:
+  * `cd desafio_biud`
+3. Instale as dependências:
+  * `npm install`
+4. Execute o programa:
+  * `npm start`
