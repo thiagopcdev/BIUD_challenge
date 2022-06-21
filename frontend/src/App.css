@@ -1,0 +1,27 @@
+* {
+  border: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scrollbar-color: rgb(224 20 105) white;
+  scrollbar-width: auto;
+}
+
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: white;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, rgb(235 18 83), rgb(224 20 105));
+  border: 3px solid white;
+  border-radius: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}

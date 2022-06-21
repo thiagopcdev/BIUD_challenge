@@ -1,0 +1,28 @@
+.header-container {
+  align-items: center;
+  background-color: rgb(240 240 240);
+  color: rgb(77 75 75);
+  display: flex;
+  font-size: 14px;
+  justify-content: flex-start;
+
+  /* position: fixed; */
+
+  /* top: 0;
+  width: 100%; */
+}
+
+.header-container button {
+  cursor: pointer;
+}
+
+.header-container button img {
+  border-radius: 7px;
+  margin: 14px 70px;
+  transition: all 0.3s ease-in-out;
+}
+
+.header-container button img:hover {
+  border: 1px solid rgb(224 20 105);
+  border-radius: 12px;
+}

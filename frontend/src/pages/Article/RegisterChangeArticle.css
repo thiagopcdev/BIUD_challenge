@@ -1,0 +1,87 @@
+.register-change-article-container {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  justify-content: flex-start;
+  margin-left: 75px;
+  margin-top: 50px;
+}
+
+.rc-title-page {
+  font-family: Franklin Gothic Medium , Arial Narrow , Arial , sans-serif;
+  font-size: 28px;
+}
+
+.inputs-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs-container img {
+  margin-left: 50px;
+  margin-top: 100px;
+}
+
+.inputs-container input[ type = 'text' ], select, textarea {
+  background-color: white;
+  border: 1px solid rgb(173, 173, 173);
+  border-radius: 5px;
+  font-size: 20px;
+  height: 40px;
+  max-width: 500px;
+  padding: 5px;
+  width: 70vw;
+}
+
+.inputs-container select {
+  margin-bottom: 20px;
+}
+
+.inputs-container .description-input {
+  height: 110px;
+}
+
+.inputs-container input[ type = 'text' ]:focus, select:focus, textarea:focus {
+  border: 1px solid rgb(224 20 105);
+  box-shadow: 0 0 1px rgb(235 18 83);
+  outline: none;
+}
+
+.inputs-container label {
+  font-size: 13px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.inputs-container label:nth-child( 1 ) {
+  font-size: 13px;
+  margin-bottom: 5px;
+  margin-top: 30px;
+}
+
+.saveback-section {
+  display: flex;
+}
+
+.saveback-section button, input[ type = 'submit' ] {
+  border: 1px solid rgb(160, 159, 159);
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  margin-right: 15px;
+  opacity: 0.8;
+  padding: 5px 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.saveback-section button:hover, input[ type = 'submit' ]:hover {
+  opacity: 1;
+}
+
+.btn-save {
+  background: linear-gradient(90deg, rgb(235 18 83), rgb(224 20 105));
+  border: 1px solid rgb(60, 27, 207);
+  color: white;
+}

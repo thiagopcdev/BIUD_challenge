@@ -1,0 +1,9 @@
+.categories-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 77vh;
+  justify-content: center;
+  margin-top: 5px;
+  overflow: auto;
+}
