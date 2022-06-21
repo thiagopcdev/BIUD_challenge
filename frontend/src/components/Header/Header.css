@@ -17,5 +17,12 @@
 }
 
 .header-container button img {
-  margin-left: 50px;
+  border-radius: 7px;
+  margin: 14px 70px;
+  transition: all 0.3s ease-in-out;
+}
+
+.header-container button img:hover {
+  border: 1px solid rgb(224 20 105);
+  border-radius: 12px;
 }
