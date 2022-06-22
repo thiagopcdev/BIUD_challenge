@@ -16,11 +16,16 @@ O desafio também contempla o back-end como um opcional, que seria um diferencia
   - [Endereço do back-end](#Endereço-do-back-end)
   - [Endpoints de Categoria](#Endpoints-de-Categoria)
     - [Endpoint para o cadastro de categoria](#Endpoint-para-o-cadastro-de-categoria)
-    - [Endpoint para o atualizar categoria](Endpoint-para-o-atualizar-categoria)
+    - [Endpoint para o atualizar categoria](#Endpoint-para-o-atualizar-categoria)
     - [Endpoint para buscar categorias](#Endpoint-para-buscar-categorias)
     - [Endpoint para buscar uma categoria](#Endpoint-para-buscar-uma-categoria)
     - [Endpoint para apagar uma categoria:](Endpoint-para-apagar-uma-categoria)
   - [Endpoints de Artigo](#Endpoints-de-Artigo)
+    - [Endpoint para o cadastro de artigo](#Endpoint-para-o-cadastro-de-artigo)
+    - [Endpoint para o atualizar artigo](#Endpoint-para-atualizar-artigo)
+    - [Endpoint para buscar artigos](#Endpoint-para-buscar-artigos)
+    - [Endpoint para buscar um artigo](#Endpoint-para-buscar-um-artigo)
+    - [Endpoint para apagar um artigo:](Endpoint-para-apagar-um-artigo)
 
 ---
 
@@ -142,7 +147,7 @@ O **Back-end** foi implementado com os seguites Endpoints:
 
 ![Criar artigo](./public/postArticle.png)
 
-#### Endpoint para o atualizar artigo:
+#### Endpoint para atualizar artigo:
 
 - O endpoint é acessível através do caminho (`/articles/:id`);
 
@@ -158,20 +163,20 @@ O **Back-end** foi implementado com os seguites Endpoints:
 
 ![Atualizar artigo](./public/updateArticle.png)
 
-#### Endpoint para o buscar artigos:
+#### Endpoint para buscar artigos:
 
 - O endpoint é acessível através do caminho (`/articles`);
 
 ![Buscar artigos](./public/getAllArticles.png)
 
-#### Endpoint para o buscar um artigo:
+#### Endpoint para buscar um artigo:
 
 - O endpoint é acessível através do caminho (`/articles/:id`);
 
 ![Buscar artigos](./public/getArticle.png)
 
 
-#### Endpoint para o apagar um artigo:
+#### Endpoint para apagar um artigo:
 
 - O endpoint é acessível através do caminho (`/articles/:id`);
 
