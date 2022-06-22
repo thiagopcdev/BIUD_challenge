@@ -33,7 +33,7 @@ O desafio também contempla o back-end como um opcional, que seria um diferencia
 
 ### Requisitos
 
-Para executar este projeto é necessário ter instalado em seu computador o [**Node.js**](https://nodejs.org/en/) e o [**MySQL.js**](https://www.mysql.com/).
+Para executar este projeto é necessário ter instalado em seu computador o <a href="https://nodejs.org/en/" target="_blank">**Node.js**</a> e o <a href="https://www.mysql.com/" target="_blank">**MySQL**</a>.
 
 ---
 
