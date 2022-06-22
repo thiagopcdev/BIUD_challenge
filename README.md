@@ -1,7 +1,7 @@
 ## Desafio Técnico BIUD
 
 Este projeto foi proposto na etapa técnica do processo seletivo para a vaga de Desenvolvedor Front-End na BIUD.
-É um projeto web completo onde o principal objetivo era criar um web app onde o usuário possa cadastrar **categorias** e, posteriormente cadastrar **artigos** vinculados a essas categorias.
+É um projeto web completo onde o principal objetivo é criar um web app onde o usuário possa cadastrar **categorias** e, posteriormente cadastrar **artigos** vinculados a essas categorias.
 O desafio também contempla o back-end como um opcional, que seria um diferencial na hora da avaliação do projeto.
 
 ---
