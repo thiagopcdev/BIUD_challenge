@@ -50,22 +50,22 @@ Para executar este projeto é necessário ter instalado em seu computador o [**N
 
 #### Tecnologias Front-end:
 
-* [ReactJS](https://pt-br.reactjs.org/)
-* [ReactRouterDOM](https://v5.reactrouter.com/web/guides/quick-start)
-* [Axios](https://axios-http.com/ptbr/docs/intro)
-* [SweetAlert](https://sweetalert.js.org/guides/)
-* [Eslint](https://eslint.org/)
-* [StyleLint](https://stylelint.io/)
+* [ReactJS](https://pt-br.reactjs.org/);
+* [ReactRouterDOM](https://v5.reactrouter.com/web/guides/quick-start);
+* [Axios](https://axios-http.com/ptbr/docs/intro);
+* [SweetAlert](https://sweetalert.js.org/guides/);
+* [Eslint](https://eslint.org/);
+* [StyleLint](https://stylelint.io/);
 
 #### Tecnologias Back-end:
 
-* [NodeJS](https://nodejs.org/en/)
-* [ExpressJS](https://expressjs.com/pt-br/)
-* [Sequelize (**ORM**)](https://sequelize.org/)
-* [MySQL](https://www.mysql.com/)
-* [HttpStatusCode](https://www.npmjs.com/package/http-status-codes)
-* [DotEnv](https://www.npmjs.com/package/dotenv)
-* [Cors](https://www.npmjs.com/package/cors)
+* [NodeJS](https://nodejs.org/en/);
+* [ExpressJS](https://expressjs.com/pt-br/);
+* [Sequelize (**ORM**)](https://sequelize.org/);
+* [MySQL](https://www.mysql.com/);
+* [HttpStatusCode](https://www.npmjs.com/package/http-status-codes);
+* [DotEnv](https://www.npmjs.com/package/dotenv);
+* [Cors](https://www.npmjs.com/package/cors);
 
 ---
 
@@ -73,21 +73,22 @@ Para executar este projeto é necessário ter instalado em seu computador o [**N
 
 O **Front-end** foi implementado com 8 páginas, sendo elas:
 
-* Tela Principal
-* Lista de categorias
-* Cadastrar categoria
-* Editar categoria
-* Lista de artigos
-* Cadastrar artigo
-* Editar artigo
-* Ler artigo
+* [Tela Principal](#Pagina-principal)
+* [Lista de categorias](#Pagina-de-categorias)
+* [Cadastrar categoria](#Pagina-cadastrar-categoria)
+* [Editar categoria](#Pagina-editar-categoria)
+* [Lista de artigos](#Pagina-de-artigos)
+* [Cadastrar artigo](#Pagina-cadastrar-artigo)
+* [Editar artigo](#Pagina-editar-artigo)
+* [Ler artigo](#Pagina-mostrar-artigo)
+
 
 O **Back-end** foi implementado com os seguites Endpoints:
 
-* `/categories` (*GET*, *POST*)
-* `/categories/id` (*GET*, *PUT*, *DELETE*)
-* `/articles` (*GET*, *POST*)
-* `/categories/id` (*GET*, *PUT*, *DELETE*)
+* `/categories` (*GET*, *POST*);
+* `/categories/id` (*GET*, *PUT*, *DELETE*);
+* `/articles` (*GET*, *POST*);
+* `/categories/id` (*GET*, *PUT*, *DELETE*);
 
 ---
 
