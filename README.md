@@ -33,7 +33,7 @@ O desafio também contempla o back-end como um opcional, que seria um diferencia
 
 ### Requisitos
 
-Para executar este projeto é necessário ter instalado em seu computador o [**Node.js**](https://nodejs.org/en/) e o [**MySQL*](https://www.mysql.com/).
+Para executar este projeto é necessário ter instalado em seu computador o [**Node.js**](https://nodejs.org/en/) e o [**MySQL**](https://www.mysql.com/).
 
 ---
 
@@ -41,22 +41,22 @@ Para executar este projeto é necessário ter instalado em seu computador o [**N
 
 #### Tecnologias Front-end:
 
-* ReactJS
-* ReactRouterDOM
-* Axios
-* SweetAlert
-* Eslint
-* StyleLint
+* [ReactJS](https://pt-br.reactjs.org/)
+* [ReactRouterDOM](https://v5.reactrouter.com/web/guides/quick-start)
+* [Axios](https://axios-http.com/ptbr/docs/intro)
+* [SweetAlert](https://sweetalert.js.org/guides/)
+* [Eslint](https://eslint.org/)
+* [StyleLint](https://stylelint.io/)
 
 #### Tecnologias Back-end:
 
-* NodeJS
-* ExpressJS
-* Sequelize (**ORM**)
-* MySQL
-* HttpStatusCode
-* DotEnv
-* Cors
+* [NodeJS](https://nodejs.org/en/)
+* [ExpressJS](https://expressjs.com/pt-br/)
+* [Sequelize (**ORM**)](https://sequelize.org/)
+* [MySQL](https://www.mysql.com/)
+* [HttpStatusCode](https://www.npmjs.com/package/http-status-codes)
+* [DotEnv](https://www.npmjs.com/package/dotenv)
+* [Cors](https://www.npmjs.com/package/cors)
 
 ---
 
