@@ -85,6 +85,7 @@ O **Front-end** foi implementado com 8 páginas, sendo elas:
 
 O **Back-end** foi implementado com os seguites Endpoints:
 
+*[Endpoint para o cadastro de categoria `/categories`](#Endpoint-para-o-cadastro-de-categoria)
 * `/categories` (*GET*, *POST*);
 * `/categories/id` (*GET*, *PUT*, *DELETE*);
 * `/articles` (*GET*, *POST*);
