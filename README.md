@@ -13,6 +13,15 @@ O desafio também contempla o back-end como um opcional, que seria um diferencia
   - [Front-end](#Tecnologias-Front-end)
   - [Back-end](#Tecnologias-Back-end)
 - [Implementação](#Implementação)
+- [Front-end](#Front-end)
+    - [Pagina principal (Main)](#Pagina-principal-(Main))
+    - [Pagina de categorias](#Pagina-de-categorias)
+    - [Pagina cadastrar categoria](#Pagina-cadastrar-categoria)
+    - [Pagina editar categoria](#Pagina-editar-categoria)
+    - [Pagina de artigos](#Pagina-de-artigos)
+    - [Pagina cadastrar artigo](#Pagina-cadastrar-artigo)
+    - [Pagina editar artigo](#Pagina-editar-artigo)
+    - [Pagina mostrar artigo](#Pagina-mostrar-artigo)
 - [Back-end](#Back-end)
   - [Endereço do back-end](#Endereço-do-back-end)
   - [Endpoints de Categoria](#Endpoints-de-Categoria)
@@ -82,6 +91,59 @@ O **Back-end** foi implementado com os seguites Endpoints:
 
 ---
 
+## Front-end
+
+### Pagina principal (Main):
+
+- A pagina é acessível através do caminho (`/main`) ou clicando no logo da BIUD no cabeçalho da aplicação;
+
+![Criar categoria](./public/front/main.png)
+
+
+### Pagina de categorias:
+
+- A pagina é acessível através do caminho (`/categories`);
+
+![Mostrar categorias](./public/front/categories.png)
+
+### Pagina cadastrar categoria:
+
+- A pagina é acessível através do caminho (`/categories/new`);
+
+![Criar categoria](./public/front/newCategory.png)
+
+### Pagina editar categoria:
+
+- A pagina é acessível através do caminho (`/categories/:id/modify`);
+
+![Editar categoria](./public/front/changeCategory.png)
+
+### Pagina de artigos:
+
+- A pagina é acessível através do caminho (`/articles`);
+
+![Mostrar artigos](./public/front/articles.png)
+
+### Pagina cadastrar artigo:
+
+- A pagina é acessível através do caminho (`/articles/new`);
+
+![Criar artigo](./public/front/newArticle.png)
+
+### Pagina editar artigo:
+
+- A pagina é acessível através do caminho (`/articles/:id/modify`);
+
+![Editar artigo](./public/front/changeArticle.png)
+
+### Pagina mostrar artigo:
+
+- A pagina é acessível através do caminho (`/articles/:id`);
+
+![Show artigo](./public/front/showArticle.png)
+
+---
+
 ## Back-end
 
 ### Endereço do back-end:
@@ -102,7 +164,7 @@ O **Back-end** foi implementado com os seguites Endpoints:
 }
 ```
 
-![Criar categoria](./public/postCategory.png)
+![Criar categoria](./public/back/postCategory.png)
 
 #### Endpoint para o atualizar categoria:
 
@@ -116,26 +178,26 @@ O **Back-end** foi implementado com os seguites Endpoints:
 }
 ```
 
-![Atualizar categoria](./public/updateCategory.png)
+![Atualizar categoria](./public/back/updateCategory.png)
 
 
 #### Endpoint para buscar categorias:
 
 - O endpoint é acessível através do caminho (`/categories`);
 
-![Buscar categorias](./public/getAllCategories.png)
+![Buscar categorias](./public/back/getAllCategories.png)
 
 #### Endpoint para buscar uma categoria:
 
 - O endpoint é acessível através do caminho (`/categories/:id`);
 
-![Buscar uma categoria](./public/getCategory.png)
+![Buscar uma categoria](./public/back/getCategory.png)
 
 #### Endpoint para apagar uma categoria:
 
 - O endpoint é acessível através do caminho (`/categories/:id`);
 
-![Apagar uma categoria](./public/deleteCategory.png)
+![Apagar uma categoria](./public/back/deleteCategory.png)
 
 ### Endpoints de Artigo:
 
@@ -153,7 +215,7 @@ O **Back-end** foi implementado com os seguites Endpoints:
 }
 ```
 
-![Criar artigo](./public/postArticle.png)
+![Criar artigo](./public/back/postArticle.png)
 
 #### Endpoint para atualizar artigo:
 
@@ -169,26 +231,26 @@ O **Back-end** foi implementado com os seguites Endpoints:
 }
 ```
 
-![Atualizar artigo](./public/updateArticle.png)
+![Atualizar artigo](./public/back/updateArticle.png)
 
 #### Endpoint para buscar artigos:
 
 - O endpoint é acessível através do caminho (`/articles`);
 
-![Buscar artigos](./public/getAllArticles.png)
+![Buscar artigos](./public/back/getAllArticles.png)
 
 #### Endpoint para buscar um artigo:
 
 - O endpoint é acessível através do caminho (`/articles/:id`);
 
-![Buscar artigos](./public/getArticle.png)
+![Buscar artigos](./public/back/getArticle.png)
 
 
 #### Endpoint para apagar um artigo:
 
 - O endpoint é acessível através do caminho (`/articles/:id`);
 
-![Apagar artigos](./public/deleteArticle.png)
+![Apagar artigos](./public/back/deleteArticle.png)
 
 ---
 
