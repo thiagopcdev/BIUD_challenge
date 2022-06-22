@@ -25,7 +25,7 @@ O desafio também contempla o back-end como um opcional, que seria um diferencia
     - [Endpoint para o atualizar artigo](#Endpoint-para-atualizar-artigo)
     - [Endpoint para buscar artigos](#Endpoint-para-buscar-artigos)
     - [Endpoint para buscar um artigo](#Endpoint-para-buscar-um-artigo)
-    - [Endpoint para apagar um artigo:](#Endpoint-para-apagar-um-artigo)
+    - [Endpoint para apagar um artigo](#Endpoint-para-apagar-um-artigo)
 
 ---
 
