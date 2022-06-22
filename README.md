@@ -8,6 +8,7 @@ O desafio também contempla o back-end como um opcional, que seria um diferencia
 
 ## Sumário
 
+- [Requisitos](#Requisitos)
 - [Tecnologias utilizadas](#Tecnologias-utilizadas)
   - [Front-end](#Tecnologias-Front-end)
   - [Back-end](#Tecnologias-Back-end)
@@ -26,6 +27,13 @@ O desafio também contempla o back-end como um opcional, que seria um diferencia
     - [Endpoint para buscar artigos](#Endpoint-para-buscar-artigos)
     - [Endpoint para buscar um artigo](#Endpoint-para-buscar-um-artigo)
     - [Endpoint para apagar um artigo](#Endpoint-para-apagar-um-artigo)
+- [Como executar o projeto](#Como-executar-o-projeto)
+
+---
+
+### Requisitos
+
+Para executar este projeto é necessário ter instalado em seu computador o [**Node.js**](https://nodejs.org/en/) e o [**MySQL.js**](https://www.mysql.com/).
 
 ---
 
@@ -181,12 +189,6 @@ O **Back-end** foi implementado com os seguites Endpoints:
 - O endpoint é acessível através do caminho (`/articles/:id`);
 
 ![Apagar artigos](./public/deleteArticle.png)
-
----
-
-### Requisitos
-
-Para executar este projeto é necessário ter instalado em seu computador o **Node.js** e o **MySQL**.
 
 ---
 
