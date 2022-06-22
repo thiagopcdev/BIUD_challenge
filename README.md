@@ -51,7 +51,9 @@ O **Back-end** foi implementado com os seguites Endpoints:
 
 ## Back-end
 
-- O projeto por padrão deve rodar na porta `http://localhost:3001`.
+### Endereço do back-end:
+
+- O back-end por padrão deve rodar na porta `http://localhost:3001`.
 
 ### Endpoints de Categoria:
 
