@@ -26,12 +26,12 @@ O desafio também contempla o back-end como um opcional, que seria um diferencia
   - [Endereço do back-end](#Endereço-do-back-end)
   - [Endpoints de Categoria](#Endpoints-de-Categoria)
     - [Endpoint para o cadastro de categoria](#Endpoint-para-o-cadastro-de-categoria)
-    - [Endpoint para o atualizar categoria](#Endpoint-para-o-atualizar-categoria)
+    - [Endpoint para o atualizar categoria](#Endpoint-para-atualizar-a-categoria)
     - [Endpoint para buscar categorias](#Endpoint-para-buscar-categorias)
     - [Endpoint para buscar uma categoria](#Endpoint-para-buscar-uma-categoria)
     - [Endpoint para apagar uma categoria:](Endpoint-para-apagar-uma-categoria)
   - [Endpoints de Artigo](#Endpoints-de-Artigo)
-    - [Endpoint para o cadastro de artigo](#Endpoint-para-o-cadastro-de-artigo)
+    - [Endpoint para o cadastro de artigo](#Endpoint-para-cadastro-de-artigo)
     - [Endpoint para o atualizar artigo](#Endpoint-para-atualizar-artigo)
     - [Endpoint para buscar artigos](#Endpoint-para-buscar-artigos)
     - [Endpoint para buscar um artigo](#Endpoint-para-buscar-um-artigo)
@@ -85,11 +85,16 @@ O **Front-end** foi implementado com 8 páginas, sendo elas:
 
 O **Back-end** foi implementado com os seguites Endpoints:
 
-*[Endpoint para o cadastro de categoria `/categories`](#Endpoint-para-o-cadastro-de-categoria)
-* `/categories` (*GET*, *POST*);
-* `/categories/id` (*GET*, *PUT*, *DELETE*);
-* `/articles` (*GET*, *POST*);
-* `/categories/id` (*GET*, *PUT*, *DELETE*);
+* [Endpoint para o cadastro de categoria `/categories`](#Endpoint-para-o-cadastro-de-categoria)
+* [Endpoint para atualizar a categoria `/categories/:id`](#Endpoint-para-atualizar-a-categoria)
+* [Endpoint para buscar categorias `/categories`](#Endpoint-para-buscar-categorias)
+* [Endpoint para buscar uma categoria `/categories/:id`](#Endpoint-para-buscar-uma-categoria)
+* [Endpoint para apagar uma categoria `/categories/:id`](#Endpoint-para-apagar-uma-categoria)
+* [Endpoint para cadastro de artigo `/articles`](#Endpoint-para-cadastro-de-artigo)
+* [Endpoint para atualizar artigo `/articles/:id`](#Endpoint-para-atualizar-artigo)
+* [Endpoint para buscar artigos `/articles`](#Endpoint-para-buscar-artigos)
+* [Endpoint para buscar um artigo `/articles/:id`](#Endpoint-para-buscar-um-artigo)
+* [Endpoint para apagar um artigo `/articles/:id`](#Endpoint-para-apagar-um-artigo)
 
 ---
 
@@ -168,7 +173,7 @@ O **Back-end** foi implementado com os seguites Endpoints:
 
 ![Criar categoria](./public/back/postCategory.png)
 
-#### Endpoint para o atualizar categoria:
+#### Endpoint para atualizar a categoria:
 
 - O endpoint é acessível através do caminho (`/categories/:id`);
 
@@ -203,7 +208,7 @@ O **Back-end** foi implementado com os seguites Endpoints:
 
 ### Endpoints de Artigo:
 
-#### Endpoint para o cadastro de artigo:
+#### Endpoint para cadastro de artigo:
 
 - O endpoint é acessível através do caminho (`/articles`);
 
