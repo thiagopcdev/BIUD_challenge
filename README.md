@@ -30,7 +30,7 @@ O desafio também contempla o back-end como um opcional, que seria um diferencia
 1. Clone o repositório
   * `git clone git@github.com:thiagopcdev/BIUD_challenge.git`
 2. Digite a pasta do repositório que você acabou de clonar:
-  * `cd desafio_biud`
+  * `cd BIUD_challenge`
 3. Instale as dependências:
   * `npm install`
 4. Execute o programa:
