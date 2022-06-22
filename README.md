@@ -35,3 +35,6 @@ O desafio também contempla o back-end como um opcional, que seria um diferencia
   * `npm install`
 4. Execute o programa:
   * `npm start`
+
+Feito isto, o seu navegador padrão deve abrir automaticamente com o endereço local,
+caso nada aconteça, basta abrir seu navegador preferido e inserir a *url* `localhost:3000`.
