@@ -47,6 +47,73 @@ O **Back-end** foi implementado com os seguites Endpoints:
 * `/articles` (*GET*, *POST*)
 * `/categories/id` (*GET*, *PUT*, *DELETE*)
 
+##### Endpoint para o cadastro de categoria:
+
+- O endpoint deve receber a seguinte estrutura:
+
+```json
+{
+  "description": "nome_da_categoria"
+}
+```
+
+![Criar categoria](./public/postCategory.png)
+
+##### Endpoint para o atualizar categoria:
+
+- O endpoint deve receber a seguinte estrutura:
+
+```json
+{
+  "description": "nome_da_categoria"
+}
+```
+
+![Atualizar categoria](./public/updateCategory.png)
+
+
+##### Endpoint para buscar categorias:
+
+![Buscar categorias](./public/getAllCategories.png)
+
+##### Endpoint para buscar uma categoria:
+
+![Buscar uma categoria](./public/getCategory.png)
+
+##### Endpoint para apagar uma categoria:
+
+![Apagar uma categoria](./public/deleteCategory.png)
+
+
+##### Endpoint para o cadastro de artigo:
+
+- O endpoint deve receber a seguinte estrutura:
+
+```json
+{
+  "title": "titulo_do_artigo",
+  "description": "descrição_do_artigo",
+  "categoryId": "id_da_categoria"
+}
+```
+
+![Criar artigo](./public/postArticle.png)
+
+##### Endpoint para o atualizar artigo:
+
+- O endpoint deve receber a seguinte estrutura:
+
+```json
+{
+  "title": "titulo_do_artigo",
+  "description": "descrição_do_artigo",
+  "categoryId": "id_da_categoria"
+}
+```
+
+![Atualizar artigo](./public/updateArticle.png)
+
+
 ---
 
 ### Requisitos
@@ -59,7 +126,7 @@ Para executar este projeto é necessário ter instalado em seu computador o **No
 
 1. Clone o repositório:
   * `git clone git@github.com:thiagopcdev/BIUD_challenge.git`
-2. Digite a pasta do repositório que você acabou de clonar:
+2. Entre na pasta do repositório que você acabou de clonar:
   * `cd BIUD_challenge`
 3. Instale as dependências:
   * `npm install`
