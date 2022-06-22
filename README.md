@@ -73,28 +73,28 @@ Para executar este projeto é necessário ter instalado em seu computador o [**N
 
 O **Front-end** foi implementado com 8 páginas, sendo elas:
 
-* [Tela Principal](#Pagina-principal)
-* [Lista de categorias](#Pagina-de-categorias)
-* [Cadastrar categoria](#Pagina-cadastrar-categoria)
-* [Editar categoria](#Pagina-editar-categoria)
-* [Lista de artigos](#Pagina-de-artigos)
-* [Cadastrar artigo](#Pagina-cadastrar-artigo)
-* [Editar artigo](#Pagina-editar-artigo)
-* [Ler artigo](#Pagina-mostrar-artigo)
+* [Tela Principal](#Pagina-principal);
+* [Lista de categorias](#Pagina-de-categorias);
+* [Cadastrar categoria](#Pagina-cadastrar-categoria);
+* [Editar categoria](#Pagina-editar-categoria);
+* [Lista de artigos](#Pagina-de-artigos);
+* [Cadastrar artigo](#Pagina-cadastrar-artigo);
+* [Editar artigo](#Pagina-editar-artigo);
+* [Ler artigo](#Pagina-mostrar-artigo);
 
 
 O **Back-end** foi implementado com os seguites Endpoints:
 
-* [Endpoint para o cadastro de categoria `/categories`](#Endpoint-para-o-cadastro-de-categoria)
-* [Endpoint para atualizar a categoria `/categories/:id`](#Endpoint-para-atualizar-a-categoria)
-* [Endpoint para buscar categorias `/categories`](#Endpoint-para-buscar-categorias)
-* [Endpoint para buscar uma categoria `/categories/:id`](#Endpoint-para-buscar-uma-categoria)
-* [Endpoint para apagar uma categoria `/categories/:id`](#Endpoint-para-apagar-uma-categoria)
-* [Endpoint para cadastro de artigo `/articles`](#Endpoint-para-cadastro-de-artigo)
-* [Endpoint para atualizar artigo `/articles/:id`](#Endpoint-para-atualizar-artigo)
-* [Endpoint para buscar artigos `/articles`](#Endpoint-para-buscar-artigos)
-* [Endpoint para buscar um artigo `/articles/:id`](#Endpoint-para-buscar-um-artigo)
-* [Endpoint para apagar um artigo `/articles/:id`](#Endpoint-para-apagar-um-artigo)
+* [Endpoint para o cadastro de categoria `/categories`](#Endpoint-para-o-cadastro-de-categoria);
+* [Endpoint para atualizar a categoria `/categories/:id`](#Endpoint-para-atualizar-a-categoria);
+* [Endpoint para buscar categorias `/categories`](#Endpoint-para-buscar-categorias);
+* [Endpoint para buscar uma categoria `/categories/:id`](#Endpoint-para-buscar-uma-categoria);
+* [Endpoint para apagar uma categoria `/categories/:id`](#Endpoint-para-apagar-uma-categoria);
+* [Endpoint para cadastro de artigo `/articles`](#Endpoint-para-cadastro-de-artigo);
+* [Endpoint para atualizar artigo `/articles/:id`](#Endpoint-para-atualizar-artigo);
+* [Endpoint para buscar artigos `/articles`](#Endpoint-para-buscar-artigos);
+* [Endpoint para buscar um artigo `/articles/:id`](#Endpoint-para-buscar-um-artigo);
+* [Endpoint para apagar um artigo `/articles/:id`](#Endpoint-para-apagar-um-artigo);
 
 ---
 
