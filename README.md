@@ -14,7 +14,7 @@ O desafio também contempla o back-end como um opcional, que seria um diferencia
   - [Back-end](#Tecnologias-Back-end)
 - [Implementação](#Implementação)
 - [Front-end](#Front-end)
-    - [Pagina principal (Main)](#Pagina-principal-(Main))
+    - [Pagina principal](#Pagina-principal)
     - [Pagina de categorias](#Pagina-de-categorias)
     - [Pagina cadastrar categoria](#Pagina-cadastrar-categoria)
     - [Pagina editar categoria](#Pagina-editar-categoria)
@@ -93,7 +93,7 @@ O **Back-end** foi implementado com os seguites Endpoints:
 
 ## Front-end
 
-### Pagina principal (Main):
+### Pagina principal:
 
 - A pagina é acessível através do caminho (`/main`) ou clicando no logo da BIUD no cabeçalho da aplicação;
 
