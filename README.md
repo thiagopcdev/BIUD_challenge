@@ -27,7 +27,7 @@ O desafio também contempla o back-end como um opcional, que seria um diferencia
 
 ### Como executar o projeto
 
-1. Clone o repositório
+1. Clone o repositório:
   * `git clone git@github.com:thiagopcdev/BIUD_challenge.git`
 2. Digite a pasta do repositório que você acabou de clonar:
   * `cd BIUD_challenge`
@@ -37,4 +37,7 @@ O desafio também contempla o back-end como um opcional, que seria um diferencia
   * `npm start`
 
 Feito isto, o seu navegador padrão deve abrir automaticamente com o endereço local,
-caso nada aconteça, basta abrir seu navegador preferido e inserir a *url* `localhost:3000`.
+caso nada aconteça, basta abrir seu navegador preferido e inserir a url `localhost:3000`.
+
+**IMPORTANTE**
+Para encerrar a aplicação, basta executar o comando `npm stop`, para isto certifique-se que você esteja na raiz da pasta BIUD_Challenge.
