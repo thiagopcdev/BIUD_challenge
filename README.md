@@ -51,6 +51,8 @@ O **Back-end** foi implementado com os seguites Endpoints:
 
 ## Back-end
 
+- O projeto por padrão deve rodar na porta `http://localhost:3001`.
+
 ### Endpoints de Categoria:
 
 #### Endpoint para o cadastro de categoria:
