@@ -47,7 +47,13 @@ O **Back-end** foi implementado com os seguites Endpoints:
 * `/articles` (*GET*, *POST*)
 * `/categories/id` (*GET*, *PUT*, *DELETE*)
 
-##### Endpoint para o cadastro de categoria:
+---
+
+### Back-end
+
+#### Endpoint para o cadastro de categoria:
+
+- O endpoint é acessível através do caminho (`/categories`);
 
 - O endpoint deve receber a seguinte estrutura:
 
@@ -59,7 +65,9 @@ O **Back-end** foi implementado com os seguites Endpoints:
 
 ![Criar categoria](./public/postCategory.png)
 
-##### Endpoint para o atualizar categoria:
+#### Endpoint para o atualizar categoria:
+
+- O endpoint é acessível através do caminho (`/categories/:id`);
 
 - O endpoint deve receber a seguinte estrutura:
 
@@ -72,20 +80,28 @@ O **Back-end** foi implementado com os seguites Endpoints:
 ![Atualizar categoria](./public/updateCategory.png)
 
 
-##### Endpoint para buscar categorias:
+#### Endpoint para buscar categorias:
+
+- O endpoint é acessível através do caminho (`/categories`);
 
 ![Buscar categorias](./public/getAllCategories.png)
 
-##### Endpoint para buscar uma categoria:
+#### Endpoint para buscar uma categoria:
+
+- O endpoint é acessível através do caminho (`/categories/:id`);
 
 ![Buscar uma categoria](./public/getCategory.png)
 
-##### Endpoint para apagar uma categoria:
+#### Endpoint para apagar uma categoria:
+
+- O endpoint é acessível através do caminho (`/categories/:id`);
 
 ![Apagar uma categoria](./public/deleteCategory.png)
 
 
-##### Endpoint para o cadastro de artigo:
+#### Endpoint para o cadastro de artigo:
+
+- O endpoint é acessível através do caminho (`/articles`);
 
 - O endpoint deve receber a seguinte estrutura:
 
@@ -99,7 +115,9 @@ O **Back-end** foi implementado com os seguites Endpoints:
 
 ![Criar artigo](./public/postArticle.png)
 
-##### Endpoint para o atualizar artigo:
+#### Endpoint para o atualizar artigo:
+
+- O endpoint é acessível através do caminho (`/articles/:id`);
 
 - O endpoint deve receber a seguinte estrutura:
 
@@ -113,6 +131,24 @@ O **Back-end** foi implementado com os seguites Endpoints:
 
 ![Atualizar artigo](./public/updateArticle.png)
 
+#### Endpoint para o buscar artigos:
+
+- O endpoint é acessível através do caminho (`/articles`);
+
+![Buscar artigos](./public/getAllArticles.png)
+
+#### Endpoint para o buscar um artigo:
+
+- O endpoint é acessível através do caminho (`/articles/:id`);
+
+![Buscar artigos](./public/getArticle.png)
+
+
+#### Endpoint para o apagar um artigo:
+
+- O endpoint é acessível através do caminho (`/articles/:id`);
+
+![Apagar artigos](./public/deleteArticle.png)
 
 ---
 
