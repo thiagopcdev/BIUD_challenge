@@ -13,6 +13,8 @@ function initialize_back_end () {
     npx sequelize-cli db:create
     npx sequelize-cli db:migrate
     npx sequelize-cli db:seed:all
+    pm2 list
+    x-www-browser http://localhost:3000
   )
 }
 
