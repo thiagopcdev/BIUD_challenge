@@ -8,19 +8,19 @@ O desafio também contempla o back-end como um opcional, que seria um diferencia
 
 ## Sumário
 
-- [Tecnologias utilizadas](#Tecnologias-utilizadas:)
-  - [Front-end](#Tecnologias-Front-end:)
-  - [Back-end](#Tecnologias-Back-end:)
-- [Implementação](#Implementação:)
+- [Tecnologias utilizadas](#Tecnologias-utilizadas)
+  - [Front-end](#Tecnologias-Front-end)
+  - [Back-end](#Tecnologias-Back-end)
+- [Implementação](#Implementação)
 - [Back-end](#Back-end)
-  - [Endereço do back-end](#Endereço-do-back-end:)
-  - [Endpoints de Categoria](#Endpoints-de-Categoria:)
-    - [Endpoint para o cadastro de categoria](#Endpoint-para-o-cadastro-de-categoria:)
-    - [Endpoint para o atualizar categoria](Endpoint-para-o-atualizar-categoria:)
-    - [Endpoint para buscar categorias](#Endpoint-para-buscar-categorias:)
-    - [Endpoint para buscar uma categoria](#Endpoint-para-buscar-uma-categoria:)
-    - [Endpoint para apagar uma categoria:](Endpoint-para-apagar-uma-categoria:)
-  - [Endpoints de Artigo](#Endpoints-de-Artigo:)
+  - [Endereço do back-end](#Endereço-do-back-end)
+  - [Endpoints de Categoria](#Endpoints-de-Categoria)
+    - [Endpoint para o cadastro de categoria](#Endpoint-para-o-cadastro-de-categoria)
+    - [Endpoint para o atualizar categoria](Endpoint-para-o-atualizar-categoria)
+    - [Endpoint para buscar categorias](#Endpoint-para-buscar-categorias)
+    - [Endpoint para buscar uma categoria](#Endpoint-para-buscar-uma-categoria)
+    - [Endpoint para apagar uma categoria:](Endpoint-para-apagar-uma-categoria)
+  - [Endpoints de Artigo](#Endpoints-de-Artigo)
 
 ---
 
