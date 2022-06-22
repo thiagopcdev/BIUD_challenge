@@ -49,7 +49,9 @@ O **Back-end** foi implementado com os seguites Endpoints:
 
 ---
 
-### Back-end
+## Back-end
+
+### Endpoints de Categoria:
 
 #### Endpoint para o cadastro de categoria:
 
@@ -98,6 +100,7 @@ O **Back-end** foi implementado com os seguites Endpoints:
 
 ![Apagar uma categoria](./public/deleteCategory.png)
 
+### Endpoints de Artigo:
 
 #### Endpoint para o cadastro de artigo:
 
