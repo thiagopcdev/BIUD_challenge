@@ -274,7 +274,7 @@ O **Back-end** foi implementado com os seguites Endpoints:
 Feito isto, o seu navegador padrão deve abrir automaticamente com o endereço local,
 caso nada aconteça, basta abrir seu navegador preferido e inserir a url `localhost:3000`.
 
-⚠️**IMPORTANTE**⚠️ 
+⚠️ **IMPORTANTE** ⚠️ 
 Para encerrar a aplicação, basta executar o comando `npm stop`, para isto certifique-se que você esteja na raiz da pasta BIUD_Challenge.
 
 ---
