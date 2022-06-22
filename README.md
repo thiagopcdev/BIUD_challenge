@@ -25,6 +25,24 @@ O desafio também contempla o back-end como um opcional, que seria um diferencia
 * DotEnv
 * Cors
 
+O **Front-end** foi implementado com 8 paginas, sendo elas:
+
+* *Tela Principal*
+* *Lista de categorias*
+* *Cadastrar categoria*
+* *Editar categoria*
+* *Lista de artigos*
+* *Cadastrar artigo*
+* *Editar artigo*
+* *Ler artigo*
+
+O **Back-end** foi implementado com os seguites Endpoints:
+
+* `/categories` (*GET* *POST*)
+* `/categories/id` (*GET* *PUT* *DELETE*)
+* `/articles` (*GET* *POST*)
+* `/categories/id` (*GET* *PUT* *DELETE*)
+
 ### Como executar o projeto
 
 1. Clone o repositório:
@@ -39,5 +57,5 @@ O desafio também contempla o back-end como um opcional, que seria um diferencia
 Feito isto, o seu navegador padrão deve abrir automaticamente com o endereço local,
 caso nada aconteça, basta abrir seu navegador preferido e inserir a url `localhost:3000`.
 
->[!IMPORTANT]
+**IMPORTANTE**
 Para encerrar a aplicação, basta executar o comando `npm stop`, para isto certifique-se que você esteja na raiz da pasta BIUD_Challenge.
